@@ -1,6 +1,6 @@
 [project]
 name = "fhir-reada"
-version = "0.1.1"
+version = "0.1.2"
 description = "A FHIR cohort extractor and de-identification tool for clinical research."
 readme = "README.md"
 authors = [{name = "Tobenna Oduah", email = "tjlite81@gmail.com"}]
