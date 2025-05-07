@@ -38,7 +38,7 @@ pip install -e .
 ## 🚀 Usage (CLI)
 
 ```bash
-fhir-reada --url https://hapi.fhir.org/baseR4 --min-age 25 --max-age 40 --diagnosis diabetes --out output.csv
+fhir-reada --url https://r4.smarthealthit.org  --min-age 25 --max-age 40 --diagnosis diabetes --out output.csv
 ```
 
 ---
@@ -47,7 +47,7 @@ fhir-reada --url https://hapi.fhir.org/baseR4 --min-age 25 --max-age 40 --diagno
 
 | Option         | Description                                          |
 |----------------|------------------------------------------------------|
-| `--url`        | FHIR base URL (e.g. `https://hapi.fhir.org/baseR4`) |
+| `--url`        | FHIR base URL (e.g. `https://r4.smarthealthit.org`) |
 | `--min-age`    | Minimum age for cohort (e.g. `25`)                  |
 | `--max-age`    | Maximum age for cohort (e.g. `40`)                  |
 | `--diagnosis`  | Diagnosis keyword (optional, e.g. `diabetes`)       |

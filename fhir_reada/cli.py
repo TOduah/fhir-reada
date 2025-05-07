@@ -28,8 +28,11 @@ def run_cli(url, min_age, max_age, diagnosis, output_file):
 
     print("De-identifying and exporting to CSV...")
     deidentified = [deidentify_patient_bundle(b) for b in bundles]
-    export_to_csv(deidentified, filename=output_file)
-    print(f"Exported to {output_file}")
+    if deidentified:
+        export_to_csv(deidentified, filename=output_file)
+        print(f"✅ Exported to {output_file}")
+    else:
+        print("⚠️ No data to export; file was not created.")
 
 def main():
     parser = argparse.ArgumentParser(description="FHIR Cohort Extractor")
